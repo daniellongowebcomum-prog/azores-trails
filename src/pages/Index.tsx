@@ -78,30 +78,36 @@ const Index = () => {
           <div className="absolute inset-0 bg-brand/58" />
         </div>
 
-        <div className="editorial-shell relative z-10 flex min-h-screen items-start pt-8 pb-16 sm:pt-10 sm:pb-20 lg:pt-12 lg:pb-24">
+        <div className="editorial-shell relative z-10 flex min-h-screen pt-8 pb-16 sm:pt-10 sm:pb-20 lg:pt-12 lg:pb-24">
           <Reveal className="max-w-3xl">
-            <div className="mb-8 inline-flex rounded-full border border-primary-foreground/80 px-5 py-2">
-              <span className="eyebrow font-semibold text-primary-foreground">Feelazores Sports</span>
-            </div>
+            <div className="flex min-h-[calc(100vh-6rem)] flex-col justify-between sm:min-h-[calc(100vh-7.5rem)] lg:min-h-[calc(100vh-9rem)]">
+              <div>
+                <div className="mb-8 inline-flex rounded-full border border-primary-foreground/80 px-5 py-2">
+                  <span className="eyebrow font-semibold text-primary-foreground">Feelazores Sports</span>
+                </div>
 
-            <h1 className="max-w-4xl text-[clamp(2.5rem,7vw,5rem)] font-semibold tracking-normal text-primary-foreground">
-              Ride Beyond the
-              <br />
-              Ordinary
-            </h1>
+                <h1 className="max-w-4xl text-[clamp(2.5rem,7vw,5rem)] font-semibold tracking-normal text-primary-foreground">
+                  Ride Beyond the
+                  <br />
+                  Ordinary
+                </h1>
+              </div>
 
-            <div className="mt-8 max-w-2xl space-y-3 text-lg font-semibold text-primary-foreground">
-              <p className="leading-[1.45]">Estamos a preparar uma nova extensão da experiência FeelViana — agora sobre duas rodas.</p>
-              <p className="leading-[1.45]">Tours guiados, aluguer de bicicletas premium e cycling holidays desenhadas à medida.</p>
-            </div>
+              <div className="max-w-2xl pb-1">
+                <div className="space-y-3 text-lg font-semibold text-primary-foreground">
+                  <p className="leading-[1.45]">Estamos a preparar uma nova extensão da experiência FeelViana — agora sobre duas rodas.</p>
+                  <p className="leading-[1.45]">Tours guiados, aluguer de bicicletas premium e cycling holidays desenhadas à medida.</p>
+                </div>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button asChild size="pill" className="bg-primary-foreground text-foreground hover:bg-primary-foreground/90">
-                <a href="#capture-form">Be the first to ride</a>
-              </Button>
-              <Button asChild size="pill" className="border border-primary-foreground/55 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
-                <a href="#services">Discover more</a>
-              </Button>
+                <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                  <Button asChild size="pill" className="bg-primary-foreground text-foreground hover:bg-primary-foreground/90">
+                    <a href="#capture-form">Be the first to ride</a>
+                  </Button>
+                  <Button asChild size="pill" className="border border-primary-foreground/55 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
+                    <a href="#services">Discover more</a>
+                  </Button>
+                </div>
+              </div>
             </div>
           </Reveal>
         </div>
@@ -240,14 +246,6 @@ const Index = () => {
 
           <div className="flex flex-col gap-4 pt-6 text-sm text-brand-foreground/80 md:flex-row md:items-center md:justify-between">
             <p>© 2026 FeelViana. All rights reserved.</p>
-            <nav aria-label="Footer" className="flex gap-6">
-              <a href="#" className="transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-foreground focus-visible:ring-offset-2 focus-visible:ring-offset-brand">
-                Privacy
-              </a>
-              <a href="mailto:hello@feelviana.com" className="transition-opacity hover:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-foreground focus-visible:ring-offset-2 focus-visible:ring-offset-brand">
-                Contact
-              </a>
-            </nav>
           </div>
         </div>
       </footer>
