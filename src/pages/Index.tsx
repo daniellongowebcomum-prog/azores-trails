@@ -226,12 +226,12 @@ const Index = () => {
                     />
                   </div>
 
-                  <div className="flex items-start gap-3 rounded-[18px] border border-border/70 bg-surface/70 px-4 py-3">
+                  <div className="flex items-start gap-3">
                     <Checkbox
                       id="privacy"
                       checked={privacyAccepted}
                       onCheckedChange={(checked) => setPrivacyAccepted(checked === true)}
-                      className="mt-0.5"
+                      className="mt-0.5 rounded-sm"
                     />
                     <Label htmlFor="privacy" className="text-sm leading-[1.4] text-foreground">
                       Li e aceito a política de privacidade.
