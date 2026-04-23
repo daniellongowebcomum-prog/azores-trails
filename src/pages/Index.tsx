@@ -1,5 +1,7 @@
 import { FormEvent, ReactNode, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 import heroImage from "@/assets/feelazores-hero-user.webp";
 import tourImage from "@/assets/feelazores-tour-user.webp";
 import bikeImage from "@/assets/feelazores-bike-v2.jpg";
@@ -8,21 +10,21 @@ import statementImage from "@/assets/feelazores-statement-user.webp";
 
 const services = [
   {
-    title: "Guided Tours",
+    title: "Passeios guiados",
     description:
-      "Percursos desenhados localmente, guiados por quem conhece cada detalhe. Sem stress. Só pedalar.",
+      "Percursos desenhados localmente, guiados por quem conhece cada detalhe. Sem stresse. Só pedalar.",
     image: tourImage,
     alt: "Cyclists enjoying a calm guided road ride through a natural landscape.",
   },
   {
-    title: "Bike Rentals",
+    title: "Aluguer de bicicletas",
     description:
       "Bicicletas premium, prontas para qualquer terreno. Escolhes o ritmo. Nós tratamos do resto.",
     image: bikeImage,
     alt: "Premium road bike prepared for a refined cycling stay.",
   },
   {
-    title: "Cycling Holidays",
+    title: "Férias de ciclismo",
     description:
       "Experiências completas, feitas à medida. Ride, stay, recover — tudo pensado como um só.",
     image: landscapeImage,
@@ -57,10 +59,13 @@ const Reveal = ({ children, className = "" }: { children: ReactNode; className?:
 
 const Index = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [privacyAccepted, setPrivacyAccepted] = useState(false);
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (!privacyAccepted) return;
     setSubmitted(true);
+    setPrivacyAccepted(false);
     event.currentTarget.reset();
   };
 
@@ -87,24 +92,24 @@ const Index = () => {
                 </div>
 
                 <h1 className="max-w-4xl text-[clamp(2.5rem,7vw,5rem)] font-semibold tracking-normal text-primary-foreground">
-                  Ride Beyond the
+                  Pedala para lá do
                   <br />
-                  Ordinary
+                  comum
                 </h1>
               </div>
 
               <div className="max-w-2xl pb-1">
-                <div className="space-y-3 text-lg font-semibold text-primary-foreground">
-                  <p className="leading-[1.45]">Estamos a preparar uma nova extensão da experiência FeelViana — agora sobre duas rodas.</p>
-                  <p className="leading-[1.45]">Tours guiados, aluguer de bicicletas premium e cycling holidays desenhadas à medida.</p>
+                <div className="space-y-2 text-xl font-bold text-primary-foreground sm:text-[1.35rem]">
+                  <p className="leading-[1.35]">Estamos a preparar uma nova extensão da experiência FeelViana — agora sobre duas rodas.</p>
+                  <p className="leading-[1.35]">Passeios guiados, aluguer de bicicletas premium e férias de ciclismo desenhadas à medida.</p>
                 </div>
 
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <Button asChild size="pill" className="bg-primary-foreground text-foreground hover:bg-primary-foreground/90">
-                    <a href="#capture-form">Be the first to ride</a>
+                    <a href="#capture-form">Sê dos primeiros a pedalar</a>
                   </Button>
                   <Button asChild size="pill" className="border border-primary-foreground/55 bg-transparent text-primary-foreground hover:bg-primary-foreground/10">
-                    <a href="#services">Discover more</a>
+                    <a href="#services">Descobrir mais</a>
                   </Button>
                 </div>
               </div>
@@ -116,7 +121,7 @@ const Index = () => {
       <section id="services" className="section-space bg-background">
         <div className="editorial-shell">
           <Reveal className="mx-auto max-w-3xl text-center">
-            <p className="eyebrow">Coming Soon</p>
+            <p className="eyebrow">Brevemente</p>
             <h2 className="mt-5 text-[clamp(2.25rem,5vw,4rem)] text-foreground">
               Uma nova forma de explorar os Açores
               <br />
@@ -167,8 +172,8 @@ const Index = () => {
               <div className="absolute inset-0 bg-brand/55" />
               <div className="relative flex min-h-[500px] items-end p-8 sm:p-10 lg:p-16">
                 <div className="max-w-2xl text-primary-foreground">
-                  <p className="eyebrow text-primary-foreground/80">Feel the ride</p>
-                  <h2 className="mt-5 text-[clamp(2.25rem,5vw,3.75rem)] text-primary-foreground">
+                  <p className="eyebrow text-primary-foreground/80">Sente a viagem</p>
+                  <h2 className="mt-5 text-[clamp(1.9rem,4vw,3.1rem)] text-primary-foreground">
                     Do vento no rosto aos percursos escolhidos com precisão, tudo é criado para que só tenhas de fazer uma coisa: pedalar.
                   </h2>
                 </div>
@@ -184,7 +189,7 @@ const Index = () => {
             <Reveal>
               <div className="max-w-xl lg:pt-6">
                 <p className="eyebrow">Brevemente disponível</p>
-                <h2 className="mt-5 text-[clamp(2.25rem,4.5vw,3.75rem)] text-foreground">Entra primeiro nesta jornada.</h2>
+                <h2 className="mt-5 text-[clamp(2.25rem,4.5vw,3.75rem)] text-foreground">Entra primeiro nesta viagem.</h2>
                 <p className="mt-6 text-lg text-subdued">
                   Recebe acesso antecipado, novidades e primeiros lançamentos da Feelazores Sports.
                 </p>
@@ -210,19 +215,31 @@ const Index = () => {
 
                   <div className="space-y-2">
                     <label htmlFor="ride-type" className="text-sm font-medium text-foreground">
-                      What kind of ride are you looking for?
+                      Que tipo de experiência procuras?
                     </label>
                     <textarea
                       id="ride-type"
                       name="rideType"
                       rows={4}
-                      placeholder="Tours, rentals, cycling holidays..."
+                      placeholder="Passeios, alugueres, férias de ciclismo..."
                       className="field-base resize-none"
                     />
                   </div>
 
-                  <Button type="submit" variant="hero" size="pill" className="w-full">
-                    Join the journey
+                  <div className="flex items-start gap-3 rounded-[18px] border border-border/70 bg-surface/70 px-4 py-3">
+                    <Checkbox
+                      id="privacy"
+                      checked={privacyAccepted}
+                      onCheckedChange={(checked) => setPrivacyAccepted(checked === true)}
+                      className="mt-0.5"
+                    />
+                    <Label htmlFor="privacy" className="text-sm leading-[1.4] text-foreground">
+                      Li e aceito a política de privacidade.
+                    </Label>
+                  </div>
+
+                  <Button type="submit" variant="hero" size="pill" className="w-full" disabled={!privacyAccepted}>
+                    Juntar-me à viagem
                   </Button>
 
                   {submitted ? (
@@ -240,12 +257,13 @@ const Index = () => {
           <div className="flex flex-col gap-4 border-b border-brand-foreground/15 pb-6 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="font-serif text-3xl font-normal">Feelazores Sports</p>
-              <p className="mt-2 text-sm text-brand-foreground/78">A FeelViana experience</p>
+              <p className="mt-2 text-sm text-brand-foreground/78">Uma experiência FeelViana</p>
             </div>
           </div>
 
           <div className="flex flex-col gap-4 pt-6 text-sm text-brand-foreground/80 md:flex-row md:items-center md:justify-between">
-            <p>© 2026 FeelViana. All rights reserved.</p>
+            <p>© 2026 FeelViana. Todos os direitos reservados.</p>
+            <p>by Webcomum</p>
           </div>
         </div>
       </footer>
