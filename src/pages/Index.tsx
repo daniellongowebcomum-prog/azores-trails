@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/feelazores-hero-user.webp";
 import tourImage from "@/assets/feelazores-tour-user.webp";
 import bikeImage from "@/assets/feelazores-bike-v2.jpg";
-import landscapeImage from "@/assets/feelazores-landscape-v2.jpg";
+import landscapeImage from "@/assets/feelazores-landscape-user.webp";
 import statementImage from "@/assets/feelazores-statement.jpg";
 
 const services = [
@@ -78,7 +78,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-brand/58" />
         </div>
 
-        <div className="editorial-shell relative z-10 flex min-h-screen items-center py-24 sm:py-28 lg:py-32">
+        <div className="editorial-shell relative z-10 flex min-h-screen items-end py-16 sm:py-20 lg:py-24">
           <Reveal className="max-w-3xl">
             <div className="mb-8 inline-flex rounded-full border border-primary-foreground/80 px-5 py-2">
               <span className="eyebrow font-semibold text-primary-foreground">Feelazores Sports</span>
