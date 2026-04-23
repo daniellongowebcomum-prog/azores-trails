@@ -1,7 +1,7 @@
 import { FormEvent, ReactNode, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/feelazores-hero-user.webp";
-import tourImage from "@/assets/feelazores-tour-v2.jpg";
+import tourImage from "@/assets/feelazores-tour-user.webp";
 import bikeImage from "@/assets/feelazores-bike-v2.jpg";
 import landscapeImage from "@/assets/feelazores-landscape-v2.jpg";
 import statementImage from "@/assets/feelazores-statement.jpg";
@@ -80,19 +80,19 @@ const Index = () => {
 
         <div className="editorial-shell relative z-10 flex min-h-screen items-center py-24 sm:py-28 lg:py-32">
           <Reveal className="max-w-3xl">
-            <div className="mb-8 inline-flex rounded-full border border-primary-foreground/55 px-5 py-2">
-              <span className="eyebrow text-primary-foreground">Feelazores Sports</span>
+            <div className="mb-8 inline-flex rounded-full border border-primary-foreground/80 px-5 py-2">
+              <span className="eyebrow font-semibold text-primary-foreground">Feelazores Sports</span>
             </div>
 
-            <h1 className="max-w-4xl text-[clamp(2.5rem,7vw,5rem)] tracking-normal text-primary-foreground">
+            <h1 className="max-w-4xl text-[clamp(2.5rem,7vw,5rem)] font-semibold tracking-normal text-primary-foreground">
               Ride Beyond the
               <br />
               Ordinary
             </h1>
 
-            <div className="mt-8 max-w-2xl space-y-5 text-lg text-primary-foreground/92">
-              <p>Estamos a preparar uma nova extensão da experiência FeelViana — agora sobre duas rodas.</p>
-              <p>Tours guiados, aluguer de bicicletas premium e cycling holidays desenhadas à medida.</p>
+            <div className="mt-8 max-w-2xl space-y-3 text-lg font-semibold text-primary-foreground">
+              <p className="leading-[1.45]">Estamos a preparar uma nova extensão da experiência FeelViana — agora sobre duas rodas.</p>
+              <p className="leading-[1.45]">Tours guiados, aluguer de bicicletas premium e cycling holidays desenhadas à medida.</p>
             </div>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
