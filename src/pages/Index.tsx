@@ -4,7 +4,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import heroImage from "@/assets/feelazores-hero-user.webp";
 import tourImage from "@/assets/feelazores-tour-user.webp";
-import bikeImage from "@/assets/feelazores-bike-v2.jpg";
+import bikeImage from "@/assets/feelazores-bike-user.jpg";
 import landscapeImage from "@/assets/feelazores-landscape-user.webp";
 import statementImage from "@/assets/feelazores-statement-user.webp";
 
@@ -21,7 +21,7 @@ const services = [
     description:
       "Bicicletas premium, prontas para qualquer terreno. Escolhes o ritmo. Nós tratamos do resto.",
     image: bikeImage,
-    alt: "Premium road bike prepared for a refined cycling stay.",
+    alt: "Ciclista com bicicleta de estrada junto ao mar nos Açores.",
   },
   {
     title: "Férias de ciclismo",
