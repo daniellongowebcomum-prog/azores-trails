@@ -10,51 +10,57 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 40 31% 94.3%;
-    --foreground: 0 0% 10.2%;
+    /* Pantone-inspired vivid palette
+       - Brand: Feelazores Teal (~Pantone 16-5533 Arcadia)
+       - Accent: Living Coral (Pantone 16-1546)
+       - Deep: Classic Blue (Pantone 19-4052) for high contrast text
+       - Background: warm soft cream for editorial feel
+    */
+    --background: 40 38% 96%;
+    --foreground: 215 60% 14%;
 
-    --card: 0 0% 99%;
-    --card-foreground: 0 0% 10.2%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 60% 14%;
 
-    --popover: 0 0% 99%;
-    --popover-foreground: 0 0% 10.2%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 60% 14%;
 
-    --primary: 0 0% 10.2%;
-    --primary-foreground: 40 31% 94.3%;
+    --primary: 215 60% 14%;
+    --primary-foreground: 40 38% 96%;
 
-    --secondary: 37.5 34.3% 86.3%;
-    --secondary-foreground: 0 0% 10.2%;
+    --secondary: 174 55% 92%;
+    --secondary-foreground: 178 72% 22%;
 
-    --muted: 37.5 34.3% 86.3%;
-    --muted-foreground: 60 2.1% 46.9%;
+    --muted: 40 25% 90%;
+    --muted-foreground: 215 20% 38%;
 
-    --accent: 111.4 13.7% 20%;
-    --accent-foreground: 40 31% 94.3%;
+    --accent: 8 85% 62%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 60% 42%;
-    --destructive-foreground: 40 31% 94.3%;
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 41.1 19.6% 81%;
-    --input: 41.1 19.6% 81%;
-    --ring: 111.4 13.7% 20%;
+    --border: 40 18% 84%;
+    --input: 40 18% 84%;
+    --ring: 178 72% 32%;
 
-    --surface: 37.5 34.3% 86.3%;
-    --brand: 111.4 13.7% 20%;
-    --brand-foreground: 40 31% 94.3%;
-    --warm: 30 33% 58.4%;
-    --warm-foreground: 0 0% 10.2%;
-    --subdued: 60 2.1% 46.9%;
+    --surface: 174 50% 95%;
+    --brand: 178 72% 28%;
+    --brand-foreground: 40 38% 96%;
+    --warm: 8 85% 62%;
+    --warm-foreground: 0 0% 100%;
+    --subdued: 215 18% 38%;
 
     --radius: 1.5rem;
 
-    --sidebar-background: 40 31% 94.3%;
-    --sidebar-foreground: 0 0% 10.2%;
-    --sidebar-primary: 111.4 13.7% 20%;
-    --sidebar-primary-foreground: 40 31% 94.3%;
-    --sidebar-accent: 37.5 34.3% 86.3%;
-    --sidebar-accent-foreground: 0 0% 10.2%;
-    --sidebar-border: 41.1 19.6% 81%;
-    --sidebar-ring: 111.4 13.7% 20%;
+    --sidebar-background: 40 38% 96%;
+    --sidebar-foreground: 215 60% 14%;
+    --sidebar-primary: 178 72% 28%;
+    --sidebar-primary-foreground: 40 38% 96%;
+    --sidebar-accent: 174 50% 92%;
+    --sidebar-accent-foreground: 178 72% 22%;
+    --sidebar-border: 40 18% 84%;
+    --sidebar-ring: 178 72% 32%;
   }
 
   .dark {
