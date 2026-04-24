@@ -165,18 +165,17 @@ const Index = () => {
       <section className="section-space bg-background pt-0">
         <div className="editorial-shell">
           <Reveal>
-            <div className="relative min-h-[500px] overflow-hidden rounded-[24px]">
+            <div className="relative overflow-hidden rounded-[24px] bg-surface">
               <img
                 src={statementImage}
-                alt="Cyclist riding along a misty coastal road in the Azores."
-                className="absolute inset-0 h-full w-full object-cover"
+                alt="Ciclista numa rua colorida dos Açores."
+                className="block h-auto w-full"
                 loading="lazy"
                 width={1920}
                 height={1080}
               />
-              <div className="absolute inset-0 bg-brand/55" />
-              <div className="relative flex min-h-[500px] items-end p-8 sm:p-10 lg:p-16">
-                <div className="max-w-2xl text-primary-foreground">
+              <div className="relative p-8 sm:p-10 lg:p-16">
+                <div className="max-w-2xl text-foreground">
                   <p className="eyebrow text-primary-foreground/80">Sente a viagem</p>
                   <h2 className="mt-5 text-[clamp(1.4rem,2.8vw,2.25rem)] text-primary-foreground">
                     Do vento no rosto aos percursos escolhidos com precisão, tudo é criado para que só tenhas de fazer uma coisa: pedalar.
