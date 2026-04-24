@@ -92,7 +92,7 @@ const Index = () => {
                   <img
                     src={logoImage}
                     alt="Feelazores Sports"
-                    className="h-16 w-auto sm:h-20 lg:h-24"
+                    className="h-10 w-auto sm:h-12 lg:h-14"
                   />
                 </div>
 
@@ -127,7 +127,7 @@ const Index = () => {
         <div className="editorial-shell">
           <Reveal className="mx-auto max-w-3xl text-center">
             <p className="eyebrow">Brevemente</p>
-            <h2 className="mt-5 text-[clamp(2.25rem,5vw,4rem)] text-foreground">
+            <h2 className="mt-5 text-[clamp(1.75rem,4vw,3rem)] text-foreground">
               Uma nova forma de explorar os Açores
               <br />
               sobre duas rodas.
@@ -264,7 +264,7 @@ const Index = () => {
               <img
                 src={logoImage}
                 alt="Feelazores Sports"
-                className="h-14 w-auto sm:h-16"
+                className="h-8 w-auto sm:h-10"
               />
               <p className="mt-3 text-sm text-brand-foreground/78">Uma experiência FeelEverywhere</p>
             </div>
