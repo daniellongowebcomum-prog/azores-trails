@@ -178,7 +178,7 @@ const Index = () => {
               <div className="relative flex min-h-[500px] items-end p-8 sm:p-10 lg:p-16">
                 <div className="max-w-2xl text-primary-foreground">
                   <p className="eyebrow text-primary-foreground/80">Sente a viagem</p>
-                  <h2 className="mt-5 text-[clamp(1.9rem,4vw,3.1rem)] text-primary-foreground">
+                  <h2 className="mt-5 text-[clamp(1.4rem,2.8vw,2.25rem)] text-primary-foreground">
                     Do vento no rosto aos percursos escolhidos com precisão, tudo é criado para que só tenhas de fazer uma coisa: pedalar.
                   </h2>
                 </div>
