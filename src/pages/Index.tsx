@@ -7,6 +7,7 @@ import tourImage from "@/assets/feelazores-tour-user.webp";
 import bikeImage from "@/assets/feelazores-bike-user.jpg";
 import landscapeImage from "@/assets/feelazores-landscape-user.webp";
 import statementImage from "@/assets/feelazores-statement-user.webp";
+import logoImage from "@/assets/feelazores-logo.png";
 
 const services = [
   {
@@ -87,8 +88,12 @@ const Index = () => {
           <Reveal className="max-w-3xl">
             <div className="flex min-h-[calc(100vh-6rem)] flex-col justify-between sm:min-h-[calc(100vh-7.5rem)] lg:min-h-[calc(100vh-9rem)]">
               <div>
-                <div className="mb-8 inline-flex rounded-full border border-primary-foreground/80 px-5 py-2">
-                  <span className="eyebrow font-semibold text-primary-foreground">Feelazores Sports</span>
+                <div className="mb-8">
+                  <img
+                    src={logoImage}
+                    alt="Feelazores Sports"
+                    className="h-16 w-auto sm:h-20 lg:h-24"
+                  />
                 </div>
 
                 <h1 className="max-w-4xl text-[clamp(2.5rem,7vw,5rem)] font-semibold tracking-normal text-primary-foreground">
@@ -128,7 +133,7 @@ const Index = () => {
               sobre duas rodas.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-subdued">
-              Cada detalhe pensado para quem valoriza tempo de qualidade, natureza e performance com conforto.
+              Cada detalhe pensado para quem valoriza natureza e performance com conforto.
             </p>
           </Reveal>
 
@@ -256,8 +261,12 @@ const Index = () => {
         <div className="editorial-shell py-10">
           <div className="flex flex-col gap-4 border-b border-brand-foreground/15 pb-6 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="font-serif text-3xl font-normal">Feelazores Sports</p>
-              <p className="mt-2 text-sm text-brand-foreground/78">Uma experiência FeelViana</p>
+              <img
+                src={logoImage}
+                alt="Feelazores Sports"
+                className="h-14 w-auto sm:h-16"
+              />
+              <p className="mt-3 text-sm text-brand-foreground/78">Uma experiência FeelEverywhere</p>
             </div>
           </div>
 
