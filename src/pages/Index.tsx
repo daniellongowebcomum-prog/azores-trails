@@ -162,7 +162,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="section-space bg-brand">
+      <section className="section-space bg-brand pb-28 md:pb-32 lg:pb-40">
         <div className="editorial-shell">
           <Reveal>
             <div className="relative overflow-hidden rounded-[24px]">
