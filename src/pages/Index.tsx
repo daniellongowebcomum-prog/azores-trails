@@ -165,19 +165,19 @@ const Index = () => {
       <section className="section-space bg-background pt-0">
         <div className="editorial-shell">
           <Reveal>
-            <div className="relative overflow-hidden rounded-[24px] bg-brand">
+            <div className="relative overflow-hidden rounded-[24px] bg-secondary p-6 sm:p-8 lg:p-10">
               <img
                 src={statementImage}
                 alt="Ciclista numa rua colorida dos Açores."
-                className="block h-auto w-full"
+                className="block h-auto w-full rounded-[16px]"
                 loading="lazy"
                 width={1920}
                 height={1080}
               />
-              <div className="relative p-8 sm:p-10 lg:p-16">
+              <div className="relative px-2 pt-10 sm:px-4 sm:pt-12 lg:px-6 lg:pt-14">
                 <div className="max-w-3xl">
-                  <p className="eyebrow !text-brand-foreground/80">Sente a viagem</p>
-                  <h2 className="mt-5 text-[clamp(1.5rem,2.8vw,2.25rem)] text-brand-foreground">
+                  <p className="eyebrow">Sente a viagem</p>
+                  <h2 className="mt-5 text-[clamp(1.25rem,2.2vw,1.875rem)] text-foreground">
                     Do vento no rosto aos percursos escolhidos com precisão, tudo é criado para que só tenhas de fazer uma coisa: pedalar.
                   </h2>
                 </div>
