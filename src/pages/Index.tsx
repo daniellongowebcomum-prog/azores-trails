@@ -162,7 +162,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="section-space bg-brand">
+      <section className="section-space bg-brand pb-28 md:pb-32 lg:pb-40">
         <div className="editorial-shell">
           <Reveal>
             <div className="relative overflow-hidden rounded-[24px]">
@@ -187,7 +187,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="capture-form" className="section-space bg-background pt-0">
+      <section id="capture-form" className="section-space bg-background">
         <div className="editorial-shell">
           <div className="grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:items-start">
             <Reveal>
