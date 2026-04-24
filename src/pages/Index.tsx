@@ -6,7 +6,7 @@ import heroImage from "@/assets/feelazores-hero-user.webp";
 import tourImage from "@/assets/feelazores-tour-user.webp";
 import bikeImage from "@/assets/feelazores-bike-user.jpg";
 import landscapeImage from "@/assets/feelazores-landscape-user.jpg";
-import statementImage from "@/assets/feelazores-statement-user.webp";
+import statementImage from "@/assets/feelazores-statement-user.jpg";
 import logoImage from "@/assets/feelazores-logo.png";
 
 const services = [
