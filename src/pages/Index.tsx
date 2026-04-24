@@ -175,9 +175,9 @@ const Index = () => {
                 height={1080}
               />
               <div className="relative p-8 sm:p-10 lg:p-16">
-                <div className="max-w-2xl text-foreground">
-                  <p className="eyebrow text-primary-foreground/80">Sente a viagem</p>
-                  <h2 className="mt-5 text-[clamp(1.4rem,2.8vw,2.25rem)] text-primary-foreground">
+                <div className="max-w-2xl">
+                  <p className="eyebrow">Sente a viagem</p>
+                  <h2 className="mt-5 text-[clamp(1.4rem,2.8vw,2.25rem)] text-foreground">
                     Do vento no rosto aos percursos escolhidos com precisão, tudo é criado para que só tenhas de fazer uma coisa: pedalar.
                   </h2>
                 </div>
